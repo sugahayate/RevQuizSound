@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestActivity">
+
+    <Button
+        android:id="@+id/question"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/quesText"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miss" />
+
+    <Button
+        android:id="@+id/hakusyu"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/hakusyuText"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bingo" />
+
+    <Button
+        android:id="@+id/bingo"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/bingoText"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroud"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageView
+        android:id="@+id/backgroud"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/syutudai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/syutudai"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroud"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/miss"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/missText"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroud"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/img_height"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sikaisya" />
+
+    <Button
+        android:id="@+id/kaitou_btn"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/kaitou"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroud"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/backgroud"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/syutudai_btn"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_size"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/syutudai"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttom_img"
+        app:layout_constraintTop_toTopOf="@+id/buttom_img" />
+
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_green_light" />
+
+    <ImageView
+        android:id="@+id/buttom_img"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/kaitou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kaitou"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttom_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_img"
+        app:layout_constraintTop_toTopOf="@+id/top_img"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <ImageView
+        android:id="@+id/kaitou_img"
+        android:layout_width="@dimen/a"
+        android:layout_height="@dimen/b"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_img"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/kaitou_img" />
+
+    <Button
+        android:id="@+id/ans_btn"
+        android:layout_width="@dimen/c"
+        android:layout_height="@dimen/d"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/ans"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kaitou_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kaitou_img"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

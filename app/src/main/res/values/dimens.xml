@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h">150dp</dimen>
+    <dimen name="btn_size">102dp</dimen>
+    <dimen name="a">320dp</dimen>
+    <dimen name="b">340dp</dimen>
+    <dimen name="c">200dp</dimen>
+    <dimen name="d">60dp</dimen>
+    <dimen name="btn_width">110dp</dimen>
+    <dimen name="btn_height">95dp</dimen>
+    <dimen name="img_height">175dp</dimen>
+</resources>
